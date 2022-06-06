@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Expense-tracker</title>
+</head>
+<body>
+    <h2>Expense Tracker</h2>
+    <div class="container">
+        <h4>Your Balance</h4>
+        <h1 id="balance-amount">$0.00</h1>
+        <div class="inc-exp-container">
+            <div class="money">
+                <h4>Income</h4>
+                <div class="money-plus" id="money-plus">+$0.00</div>
+            </div>
+            <div class="money">
+                <h4>Expense</h4>
+                <div class="money-minus"id="money-minus">-$0.00</div>
+            </div>
+        </div>
+        <h3>History</h3>
+        <ul class="list" id="list">
+            
+        </ul>
+        <h3>Add new transaction</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Text</label>
+                <input type="text" placeholder="Enter text..." id="text">
+            </div>
+            <div class="form-control">
+                <label for="Amount">Amount<br>(negative-expense ,  positive-income)</label>
+                <input type="number" placeholder="Enter amount..." id="amount">
+            </div>
+        </form>
+        <button class="transactions-btn" type="button" id="transactions-btn">Add transaction</button>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

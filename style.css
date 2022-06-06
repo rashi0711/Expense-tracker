@@ -1,0 +1,123 @@
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #f7f7f7;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:20px;
+    
+}
+.container
+{
+    width:350px;
+    margin:30px 0;
+}
+h4{
+    text-transform: uppercase;
+    margin:5px 0;
+}
+h3{
+    font-size: 16px;
+    border-bottom: 2px solid #dedede;
+    margin:20px 0;
+    padding:5px 0;
+}
+.inc-exp-container
+{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding:20px;
+    margin:20px 0;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+.money-plus
+{
+   color:#2ecc71; 
+}
+.money-minus
+{
+    color:#c0392b;
+}
+.list{
+    list-style-type: none;
+    padding:10px;
+}
+.list li
+{
+    
+    background-color: #fff;
+    position: relative;
+    color:#333;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0;  
+}
+.delete-btn
+{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform:translate(-100%,-50%);
+    background-color: #e74c3c;
+    font-size:20px;
+    color:#fff;
+    border:0;
+    padding:2px 5px;
+    transition: opacity 0.4s ease;
+    opacity:0;
+    cursor: pointer;
+}
+.list li:hover .delete-btn
+{
+    opacity:1;
+}
+.form-control
+{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+label{
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+input{
+    padding:10px 5px;
+    border: 0;
+    border-radius: 2px;
+    width:100%;
+    font-size: 14px;
+}
+.transactions-btn
+{
+    width:100%;
+    margin:20px 0;
+    background-color: #9c88ff;
+    padding:10px 15px;
+    font-size: 16px;
+    border: 0;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.minus
+{
+    border-right:5px solid #c0392b;
+}
+.plus{
+     border-right: 5px solid #2ecc71;
+}
+.delete-btn:hover,.transactions-btn:hover{
+    opacity:0.8;
+}
